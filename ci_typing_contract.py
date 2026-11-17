@@ -80,7 +80,13 @@ assert all(Path(row['file']).name == 'negative.py' for row in errors)
 pr_lines = sorted(set(row['range']['start']['line'] + 1 for row in errors))
 assert my_lines == pr_lines == lines, (lines, my_lines, pr_lines)
 run('stubtest-all5-covered-modules-no-allowlist', [sys.executable, '-I', '-B', '-m', 'mypy.stubtest', *modules])
-run('original-unittest-discover-unchanged', [sys.executable, '-I', '-B', '-m', 'unittest', 'discover', '-s', ROOT / 'test', '-v'])
+# Preserve the original tests' sibling ../DSDL layout in our own output tree.
+# The fixture comes from the already hash-verified real installed definitions.
+fixture = OUT / 'original-fixture'
+original_tests = fixture / 'pydronecan/test'
+shutil.copytree(ROOT / 'test', original_tests)
+shutil.copytree(package / 'dsdl_specs', fixture / 'DSDL')
+run('original-unittest-discover-unchanged', [sys.executable, '-I', '-B', '-m', 'unittest', 'discover', '-s', original_tests, '-v'])
 driver = inputs / 'run_original_installed.py'
 driver.write_text('''from pathlib import Path
 import dronecan,json,pytest,sys
@@ -89,7 +95,7 @@ code=pytest.main(['-q','-r','s',sys.argv[1],'--junitxml='+sys.argv[2],'--basetem
 print(json.dumps({'actual_package':dronecan.__file__,'gil_after':sys._is_gil_enabled(),'gil_flag':sys._xoptions.get('gil')}))
 raise SystemExit(code)
 ''')
-run('all58-original-installed-pytest', [sys.executable, '-I', '-B', driver, ROOT / 'test', OUT / 'JUNIT.xml', OUT / 'pytest-temp'])
+run('all58-original-installed-pytest', [sys.executable, '-I', '-B', driver, original_tests, OUT / 'JUNIT.xml', OUT / 'pytest-temp'])
 suite = {key: sum(int(node.get(key, 0)) for node in ET.parse(OUT / 'JUNIT.xml').getroot().iter('testsuite')) for key in ('tests', 'failures', 'errors', 'skipped')}
 assert suite == {'tests': 58, 'failures': 0, 'errors': 0, 'skipped': 0}, suite
 native = json.loads(run('all145-types-124-registry-346-native-codecs', [sys.executable, '-I', '-B', inputs / 'native_snapshot.py']).stdout)

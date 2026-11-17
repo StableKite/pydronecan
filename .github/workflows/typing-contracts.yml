@@ -1,7 +1,7 @@
 name: Installed PEP561 Root contracts
 on:
   push:
-    branches: [stablekite/pep561-root-contracts-v1]
+    branches: [stablekite/pep561-root-contracts-v2]
   workflow_dispatch:
 permissions:
   contents: read
