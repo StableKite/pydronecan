@@ -1,0 +1,53 @@
+name: Installed PEP561 Root contracts
+on:
+  push:
+    branches: [stablekite/pep561-root-contracts-v1]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  installed:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-24.04]
+        python: ['3.13', '3.15.2t']
+        form: [wheel, sdist]
+    env:
+      GIT_CONFIG_COUNT: '2'
+      GIT_CONFIG_KEY_0: core.autocrlf
+      GIT_CONFIG_VALUE_0: 'false'
+      GIT_CONFIG_KEY_1: core.eol
+      GIT_CONFIG_VALUE_1: lf
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Build real distributions and install current checkers
+        shell: bash
+        run: |
+          python -m pip install build wheel pytest "mypy @ git+https://github.com/StableKite/mypy.git@35056bb452dd2e06074d06920ee25ae6e032099e" "pyright[nodejs] @ git+https://github.com/StableKite/pyright-python.git@87aa8777187d9bbe31057ecd3be16cd9e3efed75"
+          python -m build
+      - name: Install actual wheel or rebuild actual sdist
+        shell: bash
+        env:
+          FORM: ${{ matrix.form }}
+        run: |
+          if [ "$FORM" = sdist ]; then
+            python -m pip wheel --no-deps --wheel-dir rebuilt dist/*.tar.gz
+            python -m pip install rebuilt/*.whl
+          else
+            python -m pip install dist/*.whl
+          fi
+      - name: Qualify installed bytes, strict types, native codecs and original tests
+        run: python -I -B ci_typing_contract.py
+      - name: Retain primary receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: contracts-${{ runner.os }}-${{ matrix.python }}-${{ matrix.form }}
+          path: typing-contract-results

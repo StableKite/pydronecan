@@ -18,6 +18,10 @@ import sys
 import struct
 import time
 from logging import getLogger
+from typing import TYPE_CHECKING, Dict, Tuple
+
+if TYPE_CHECKING:
+    from .dsdl.parser import CompoundType
 
 # Remove deprecated pkg_resources
 try:
@@ -123,8 +127,8 @@ class Namespace(object):
 
 
 MODULE = Module()
-DATATYPES = {}
-TYPENAMES = {}
+DATATYPES = {}  # type: Dict[Tuple[int, int], CompoundType]
+TYPENAMES = {}  # type: Dict[str, CompoundType]
 
 
 # noinspection PyProtectedMember

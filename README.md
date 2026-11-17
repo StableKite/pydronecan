@@ -40,3 +40,26 @@ Please follow the existing coding styles.
 Much of the development of this tool is based upon original work by
 Pavel Kirienko and others from the UAVCAN Development Team. See
 https://github.com/UAVCAN/pyuavcan/tree/legacy-v0 for contributors.
+
+
+StableKite PEP 561 contract scope
+--------------------------------
+This fork describes the actual Root-facing DATATYPES/TYPENAMES registries and
+the transport and DSDL parser APIs in five covered modules. Their stubs pass
+current strict mypy/Pyright and runtime stubtest without an allowlist. Other
+node/driver/application modules remain unannotated; whole-package strict
+completeness or generated field-specific DSDL namespace typing is not claimed.
+Dynamic field values use finite scalar/value/iterable unions, never Any.
+
+A raw CompoundType factory initially returns None until load_dsdl binds it.
+The callable result is therefore CompoundValue | None; consumers must check
+it before unpacking. Transfer.payload preserves its actual serialized
+bytearray / decoded CompoundValue / None states. Empty Frame.transfer_key
+contains a None transfer ID. No runtime codec behavior has been changed.
+
+Ordinary Git builds include the exact 147 DSDL files bundled with upstream
+1.0.27, from DSDL commit 04e0e818b06c180eb1720fcdf16484d0f12895ee.
+SOURCE_DSDL.json records their original source and hashes; builds require no
+external sibling DSDL checkout or Windows symlink privileges. All 58 original
+tests are preserved, and the native contract probe compares 145 type
+signatures, 124 registry entries, and 346 real codec cases to that baseline.

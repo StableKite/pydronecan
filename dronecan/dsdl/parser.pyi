@@ -1,0 +1,123 @@
+from collections.abc import Callable, Iterable
+from logging import Logger
+from typing import ClassVar, Literal, NoReturn, TypeAlias
+from .common import DsdlException as DsdlException, pretty_filename as pretty_filename, bytes_from_crc64 as bytes_from_crc64
+from .signature import Signature as Signature, compute_signature as compute_signature
+from .type_limits import get_unsigned_integer_range as get_unsigned_integer_range, get_signed_integer_range as get_signed_integer_range, get_float_range as get_float_range
+from ..transport import BaseValue, CompoundValue
+
+long = int
+_FieldInput: TypeAlias = int | float | str | BaseValue | Iterable['_FieldInput'] | None
+
+MAX_FULL_TYPE_NAME_LEN: int
+SERVICE_DATA_TYPE_ID_MAX: int
+MESSAGE_DATA_TYPE_ID_MAX: int
+logger: Logger
+
+class Type:
+    CATEGORY_PRIMITIVE: ClassVar[int]
+    CATEGORY_ARRAY: ClassVar[int]
+    CATEGORY_COMPOUND: ClassVar[int]
+    CATEGORY_VOID: ClassVar[int]
+    full_name: str
+    category: int
+    def __init__(self, full_name: str, category: int) -> None: ...
+    def __str__(self) -> str: ...
+    def __repr__(self) -> str: ...
+    def get_data_type_signature(self) -> int | None: ...
+    def get_normalized_definition(self) -> str: ...
+    def get_max_bitlen(self) -> int: ...
+    def get_min_bitlen(self) -> int: ...
+
+class PrimitiveType(Type):
+    KIND_BOOLEAN: ClassVar[int]
+    KIND_UNSIGNED_INT: ClassVar[int]
+    KIND_SIGNED_INT: ClassVar[int]
+    KIND_FLOAT: ClassVar[int]
+    CAST_MODE_SATURATED: ClassVar[int]
+    CAST_MODE_TRUNCATED: ClassVar[int]
+    kind: int
+    bitlen: int
+    cast_mode: int
+    value_range: tuple[int, int] | tuple[float, float]
+    def __init__(self, kind: int, bitlen: int, cast_mode: int) -> None: ...
+    def validate_value_range(self, value: int | float) -> None: ...
+
+class ArrayType(Type):
+    MODE_STATIC: ClassVar[int]
+    MODE_DYNAMIC: ClassVar[int]
+    value_type: Type
+    mode: int
+    max_size: int
+    def __init__(self, value_type: Type, mode: int, max_size: int) -> None: ...
+    @property
+    def is_string_like(self) -> bool: ...
+
+class CompoundType(Type):
+    KIND_SERVICE: ClassVar[int]
+    KIND_MESSAGE: ClassVar[int]
+    source_file: str
+    default_dtid: int | None
+    version: tuple[int, int]
+    kind: int
+    source_text: str
+    override_signature: int | None
+    base_crc: int
+    # The corresponding members are initialized for the selected DSDL kind.
+    fields: list[Field]
+    constants: list[Constant]
+    union: bool
+    request_fields: list[Field]
+    response_fields: list[Field]
+    request_constants: list[Constant]
+    response_constants: list[Constant]
+    request_union: bool
+    response_union: bool
+    def __init__(self, full_name: str, kind: int, source_file: str, default_dtid: int | None, version: tuple[int, int], source_text: str) -> None: ...
+    # load_dsdl replaces the initial no-op factory. Raw parser types return None.
+    def __call__(self, _mode: Literal['request', 'response'] | None = None, *args: object, **kwargs: _FieldInput) -> CompoundValue | None: ...
+    get_max_bitlen_request: Callable[[], int]
+    get_max_bitlen_response: Callable[[], int]
+    get_min_bitlen_request: Callable[[], int]
+    get_min_bitlen_response: Callable[[], int]
+    def get_dsdl_signature_source_definition(self) -> str: ...
+    def get_dsdl_signature(self) -> int: ...
+    def get_data_type_signature(self) -> int: ...
+
+class VoidType(Type):
+    bitlen: int
+    def __init__(self, bitlen: int) -> None: ...
+
+class Attribute:
+    type: Type
+    name: str | None
+    def __init__(self, type: Type, name: str | None) -> None: ...
+    def __str__(self) -> str: ...
+    def __repr__(self) -> str: ...
+    def get_normalized_definition(self) -> str: ...
+
+class Field(Attribute): ...
+
+class Constant(Attribute):
+    init_expression: str
+    value: int | float
+    string_value: str
+    def __init__(self, type: Type, name: str, init_expression: str, value: int | float) -> None: ...
+
+class Parser:
+    search_dirs: list[str]
+    def __init__(self, search_dirs: Iterable[str]) -> None: ...
+    def parse_source(self, filename: str, source_text: str) -> CompoundType: ...
+    def parse(self, filename: str) -> CompoundType: ...
+
+def error(fmt: str, *args: object) -> NoReturn: ...
+def enforce(cond: object, fmt: str, *args: object) -> None: ...
+def bitlen_to_bytelen(x: int) -> int: ...
+def evaluate_expression(expression: str) -> object: ...
+def validate_search_directories(dirnames: Iterable[str]) -> list[str]: ...
+def validate_namespace_name(name: str) -> None: ...
+def validate_compound_type_full_name(name: str) -> None: ...
+def validate_attribute_name(name: str) -> None: ...
+def validate_data_type_id(t: CompoundType) -> None: ...
+def validate_union(t: CompoundType) -> None: ...
+def parse_namespaces(source_dirs: list[str], search_dirs: list[str] | None = None) -> list[CompoundType]: ...

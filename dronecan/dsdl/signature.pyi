@@ -1,0 +1,13 @@
+from collections.abc import Iterable
+from typing import ClassVar
+
+class Signature:
+    MASK64: ClassVar[int]
+    POLY: ClassVar[int]
+    def __init__(self, extend_from: int | None = None) -> None: ...
+    def add(self, data_bytes: Iterable[int] | str) -> None: ...
+    def get_value(self) -> int: ...
+
+def compute_signature(data: Iterable[int] | str) -> int: ...
+
+s: Signature

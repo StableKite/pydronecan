@@ -26,7 +26,8 @@ try:
     args = dict(
         version=__version__,
         package_data={
-            'dronecan': [os.path.join(root[len('dronecan/'):], fname)
+            'dronecan.dsdl': ['*.pyi'],
+            'dronecan': ['py.typed', '*.pyi'] + [os.path.join(root[len('dronecan/'):], fname)
                     for root, dirs, files in os.walk('dronecan/dsdl_specs', followlinks=True)
                     for fname in files if fname.endswith('.uavcan')]
         },

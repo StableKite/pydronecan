@@ -1,0 +1,718 @@
+{
+  "dronecan/__init__.py": {
+    "bytes": 9540,
+    "sha256": "8cb21f292a6b4e7265f3afeadf9cd9d779b41137a9efb5c82fe94c65a6196358"
+  },
+  "dronecan/app/__init__.py": {
+    "bytes": 464,
+    "sha256": "5f51ba497b6c15ef67b03747436dcaa3521e769f61afafd6b26173fa516f5e8c"
+  },
+  "dronecan/app/dynamic_node_id.py": {
+    "bytes": 10155,
+    "sha256": "dc9fdfa028d7f218071f5d6b83af241d737b03c748a7efa518ddd44624755914"
+  },
+  "dronecan/app/file_server.py": {
+    "bytes": 3881,
+    "sha256": "eede5999553205c84ca1d57b587df38e59894db5617dce582b6f49d545a2b233"
+  },
+  "dronecan/app/log_message_monitor.py": {
+    "bytes": 917,
+    "sha256": "bb3354f9017d6a1f651ea68af7e9fd3b513a922d1ccc160440d1a1804d51f80e"
+  },
+  "dronecan/app/message_collector.py": {
+    "bytes": 2405,
+    "sha256": "130d827e20860a8888f84259003b79c2387382a2127b49758c22a7d7622349ad"
+  },
+  "dronecan/app/node_monitor.py": {
+    "bytes": 8236,
+    "sha256": "1ebea15bd4c23097d6ed65a3f8c2ec7ba3011468cb5fd24ebace9b35ccf3a656"
+  },
+  "dronecan/driver/__init__.py": {
+    "bytes": 2610,
+    "sha256": "049fc30cfcde7d83a67d7f31d2f7493e3584b5b0059a4094f075b44e2ae14d1a"
+  },
+  "dronecan/driver/common.py": {
+    "bytes": 4737,
+    "sha256": "60eb1db370a0d10bb7429e4ea4a7bb8ac4e812d3b27c4f21f4b5d0b153e13257"
+  },
+  "dronecan/driver/file.py": {
+    "bytes": 5947,
+    "sha256": "aab93fe4cde6d7f77d3e5d892a17c90fcab7882c8457cefad0a1b6b06eab45a5"
+  },
+  "dronecan/driver/mavcan.py": {
+    "bytes": 9969,
+    "sha256": "46dec6bc24360402b7e99fa9893ef8e67c9c19fb1a8630e96fe5488d72300d7d"
+  },
+  "dronecan/driver/mcast.py": {
+    "bytes": 5914,
+    "sha256": "6e42020f0b1fb0207377215cd2b878d794a53096f883e03bb9600eb43782408a"
+  },
+  "dronecan/driver/python_can.py": {
+    "bytes": 6288,
+    "sha256": "c7f5df00fb392a048cc5268a2fb6ae79a42d906e901edc86d89408144bae41c9"
+  },
+  "dronecan/driver/slcan.py": {
+    "bytes": 32605,
+    "sha256": "d57ee0fe162e97321a14c3543b599479fbfe55d937ecc0c79baa74bae62b8c7a"
+  },
+  "dronecan/driver/socketcan.py": {
+    "bytes": 11267,
+    "sha256": "ad6264db4d229a2e45b155768baa10a8d66a9a37f58d3e35a4b734b34daaf1de"
+  },
+  "dronecan/driver/timestamp_estimator.py": {
+    "bytes": 10116,
+    "sha256": "5aea85c764be4e75055eeb9c3c593abcefa17ce628dd4bb968cdcad40959f3a9"
+  },
+  "dronecan/dsdl/__init__.py": {
+    "bytes": 751,
+    "sha256": "9c4cd2156d1adda796b1e941803e148b8c02e84b4bfc63019f17db5765f609e3"
+  },
+  "dronecan/dsdl/common.py": {
+    "bytes": 2560,
+    "sha256": "abfe4f20c0fc002c6cadfe1d320498767daedd5541f2b2b22e62946398623e73"
+  },
+  "dronecan/dsdl/common.pyi": {
+    "bytes": 465,
+    "sha256": "5fae6150bdb9917388f7abbd6c7ba767916821f2e12d974e983a776181815783"
+  },
+  "dronecan/dsdl/parser.py": {
+    "bytes": 35564,
+    "sha256": "8e9c6775e164ed02f181acc08b8ac9cb06ec3c60a3e0b37818cb2da1448d192d"
+  },
+  "dronecan/dsdl/parser.pyi": {
+    "bytes": 4836,
+    "sha256": "d51080c122673938a8021954b43c24bc2caab7b7db97f185d23901f765a437d6"
+  },
+  "dronecan/dsdl/signature.py": {
+    "bytes": 2242,
+    "sha256": "7a63cb0591db3cc43b932aa118f6f1960c8d7a98a2324679d9fb537f11850182"
+  },
+  "dronecan/dsdl/signature.pyi": {
+    "bytes": 377,
+    "sha256": "b56e4395d620d8f56a2913974ef304ef21459cd2b291fd73be2345ebba744fba"
+  },
+  "dronecan/dsdl/type_limits.py": {
+    "bytes": 1000,
+    "sha256": "370e674eba8ad2a31fd1968155fc98662ae5d4d3759cef0c3ccbf600b0815305"
+  },
+  "dronecan/dsdl/type_limits.pyi": {
+    "bytes": 247,
+    "sha256": "121b193dd9f4875b57d43680b561f7c053f9103d148269bd008662bfbfff93e0"
+  },
+  "dronecan/dsdl_specs/ardupilot/equipment/power/20004.BatteryInfoAux.uavcan": {
+    "bytes": 1613,
+    "sha256": "2a2dc09cfd2a77ca968a81ccade696a0cebefb87124ef4a3ecf4aebe283d44b3"
+  },
+  "dronecan/dsdl_specs/ardupilot/equipment/power/20010.BatteryContinuous.uavcan": {
+    "bytes": 2387,
+    "sha256": "6e80440e1a98ca430a8573c3b30620758710f502a03453c7c3b5a4795d30c5b8"
+  },
+  "dronecan/dsdl_specs/ardupilot/equipment/power/20011.BatteryPeriodic.uavcan": {
+    "bytes": 2005,
+    "sha256": "3992753efdcef8d5efe78fddf6cffc9bbaad4e91829184b5d9777c1029e8cc50"
+  },
+  "dronecan/dsdl_specs/ardupilot/equipment/power/20012.BatteryCells.uavcan": {
+    "bytes": 302,
+    "sha256": "00b698d7df874ca4ed00fc8117705c1b836c22745cb17a3a0673474c8c9fc3a8"
+  },
+  "dronecan/dsdl_specs/ardupilot/equipment/power/20500.BatteryTag.uavcan": {
+    "bytes": 695,
+    "sha256": "68498e3abb66c2646192217043b53db8e274108a2d99dea6dd587fb53975cc3c"
+  },
+  "dronecan/dsdl_specs/ardupilot/equipment/proximity_sensor/21910.Proximity.uavcan": {
+    "bytes": 594,
+    "sha256": "d9b9758ca94c43b9e9d685ff837fa0319abcea171499f4bae055c262b1210438"
+  },
+  "dronecan/dsdl_specs/ardupilot/equipment/trafficmonitor/20790.TrafficReport.uavcan": {
+    "bytes": 1610,
+    "sha256": "64868b7381c2c3b06c64004c4078e9fd0c1262464ae3e706456b5ce4a736fb39"
+  },
+  "dronecan/dsdl_specs/ardupilot/gnss/20002.Heading.uavcan": {
+    "bytes": 97,
+    "sha256": "bb46b54a728b68d2dfc3b47882ea616d85cfc30f303028d66e284f85caadb6e3"
+  },
+  "dronecan/dsdl_specs/ardupilot/gnss/20003.Status.uavcan": {
+    "bytes": 464,
+    "sha256": "c2c2c8e0e83ea337a2013768d7e59657e57fa4efd90912114183f77616d47779"
+  },
+  "dronecan/dsdl_specs/ardupilot/gnss/20005.MovingBaselineData.uavcan": {
+    "bytes": 111,
+    "sha256": "928fd99bf202c4ba7d3f43552e0f754d5ee27116655cd58e743112ded852f3fe"
+  },
+  "dronecan/dsdl_specs/ardupilot/gnss/20006.RelPosHeading.uavcan": {
+    "bytes": 216,
+    "sha256": "5548d9867cdc31c0c01631886105606f26c9a3d13ef5005b4f6c5c1494e88685"
+  },
+  "dronecan/dsdl_specs/ardupilot/indication/20000.SafetyState.uavcan": {
+    "bytes": 128,
+    "sha256": "2725fc3bc86b65d3d029b77ee1fb6e27256c5160fdc84846e7828b486a566127"
+  },
+  "dronecan/dsdl_specs/ardupilot/indication/20001.Button.uavcan": {
+    "bytes": 250,
+    "sha256": "9760cae4f5bab3a47e5875064e35497e0480459feda280268783453840dc8e1e"
+  },
+  "dronecan/dsdl_specs/ardupilot/indication/20007.NotifyState.uavcan": {
+    "bytes": 1410,
+    "sha256": "ae2418ed85d1c78b939f0aa64e3f34978660c6dd1298e48f01f715e9ebae379c"
+  },
+  "dronecan/dsdl_specs/com/hex/equipment/flow/20200.Measurement.uavcan": {
+    "bytes": 281,
+    "sha256": "7a6502047c61caf1554e05e51d0fe17078cdec239604a8678905dd46e240b682"
+  },
+  "dronecan/dsdl_specs/com/himark/servo/2018.ServoCmd.uavcan": {
+    "bytes": 248,
+    "sha256": "bbad636850606089d74faaca7d81eb4dd729a53a5e718896e06e00ac613305dd"
+  },
+  "dronecan/dsdl_specs/com/himark/servo/2019.ServoInfo.uavcan": {
+    "bytes": 959,
+    "sha256": "7631f529dd2a4c1512a70f1114c3e49e8a83c088a328f33802a47cd4adb352bf"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/20013.GetEscID.uavcan": {
+    "bytes": 92,
+    "sha256": "5e21385a44ffdff4cf4ae724c7302ead8eff219a96a3d843456b450b11b2d5be"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/20050.StatusMsg1.uavcan": {
+    "bytes": 80,
+    "sha256": "2584c3ec928fe21114d4311643f1228db2aaec9fdb194c548e5cb13c61dd26d3"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/20051.StatusMsg2.uavcan": {
+    "bytes": 119,
+    "sha256": "6fa83fc8cd15597ded9707245f1e9958aeab55c646c7723bc610f1d63a870c18"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/20052.StatusMsg3.uavcan": {
+    "bytes": 82,
+    "sha256": "f86338a2af1a7d9f0d2147918b2b07c13953f3b13f54620e48d05a48d5e18aa9"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/20100.RawCommand.uavcan": {
+    "bytes": 61,
+    "sha256": "620ae48e7c075bd76fed46c935955f755991f8807baf79883a75e47b35d31df9"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/210.SetID.uavcan": {
+    "bytes": 128,
+    "sha256": "9fa8fb12c026c31ae25d680b5bc1e7960907042a3893e720415100dc2c428d17"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/211.SetBaud.uavcan": {
+    "bytes": 201,
+    "sha256": "c45bbaed2b783ab65364e8a20f59768b2f378bd8f40a7ff6129ebb8ae4631a9b"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/212.SetLED.uavcan": {
+    "bytes": 298,
+    "sha256": "6026722041dd68fc5a989e5e8171a4dc22721d83aa644a5fff9c3ddde651ba5e"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/213.SetDirection.uavcan": {
+    "bytes": 181,
+    "sha256": "79c7cd8bafff2245152858df7297f2e9a8d8cba180bede410148983a0bbde25c"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/214.SetReportingFrequency.uavcan": {
+    "bytes": 376,
+    "sha256": "c146354e213db2e33e8cb550c94c150c875ced6fcdc467c89228c09df4ffcbf1"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/215.SetThrottleSource.uavcan": {
+    "bytes": 130,
+    "sha256": "9dcccc16e9dede99da94d4982bb8596578084e460eb17ad159873459c89e40ad"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/216.SelfTest.uavcan": {
+    "bytes": 108,
+    "sha256": "f02da301e5a969f606daeee2f0bf17d4784dfe9ff3fbb2b3946abcca6c200c72"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/217.SetAngle.uavcan": {
+    "bytes": 111,
+    "sha256": "c54a840acb2f279382aea7da2b799baf78265e4796e138853cd76888e983a022"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/241.GetMaintenanceInformation.uavcan": {
+    "bytes": 156,
+    "sha256": "a383bde6078248860d5c9e927262f94c8e5b0aba2ab2be4a3fd5d18cb9dd7b55"
+  },
+  "dronecan/dsdl_specs/com/hobbywing/esc/242.GetMajorConfig.uavcan": {
+    "bytes": 248,
+    "sha256": "4fb45cb1447f0691c06f1f596a5c829ca5a662fbe09b36de10e7fa2a0d6b552c"
+  },
+  "dronecan/dsdl_specs/com/tmotor/esc/1033.ParamCfg.uavcan": {
+    "bytes": 418,
+    "sha256": "70b3271dcbff3ba2b39d61e9dcf54b51413e3d02c8ad8a239e33bb42f6cb2017"
+  },
+  "dronecan/dsdl_specs/com/tmotor/esc/1035.FocCtrl.uavcan": {
+    "bytes": 152,
+    "sha256": "bfb748decb2edf7658e2a2f74117e9bee0ec68b78acb07f456c733924cc922fe"
+  },
+  "dronecan/dsdl_specs/com/tmotor/esc/1038.PUSHSCI.uavcan": {
+    "bytes": 124,
+    "sha256": "9b21c770a6e9233f84ebd11def8284feb60602cfaf70692b820006f0657ff370"
+  },
+  "dronecan/dsdl_specs/com/tmotor/esc/1039.PUSHCAN.uavcan": {
+    "bytes": 122,
+    "sha256": "3cf8f93db64690926cc7ad0cdee609678c7d50610a3c1330a2ff9753d726e60e"
+  },
+  "dronecan/dsdl_specs/com/tmotor/esc/1332.ParamGet.uavcan": {
+    "bytes": 538,
+    "sha256": "3aad9f351b17276123af503d17e776a3c7a0981a2c292bac28dbf643b67e575e"
+  },
+  "dronecan/dsdl_specs/com/volz/servo/20020.ActuatorStatus.uavcan": {
+    "bytes": 510,
+    "sha256": "2bc631b0e85e7a3e0c4af5d4646a527688667a9263d51f0430509c8588ac1c4b"
+  },
+  "dronecan/dsdl_specs/com/xacti/20305.GnssStatus.uavcan": {
+    "bytes": 992,
+    "sha256": "c83d134e69d1c18beb8eb4efd8fac022704732da39e8cc2b1fa89668553a3dbc"
+  },
+  "dronecan/dsdl_specs/com/xacti/20306.GnssStatusReq.uavcan": {
+    "bytes": 201,
+    "sha256": "4ef5166e9f3e5ab06cdec3a25db35be009b51f68ac2ef1f3a0f73ee8165ac55a"
+  },
+  "dronecan/dsdl_specs/com/xacti/20402.GimbalAttitudeStatus.uavcan": {
+    "bytes": 320,
+    "sha256": "e6216902d15bc12bce5aa1373cd1fe511e32e817b496d42e159b47e9669fabad"
+  },
+  "dronecan/dsdl_specs/com/xacti/20407.CopterAttStatus.uavcan": {
+    "bytes": 468,
+    "sha256": "c646f1fc754d890e413634e1d281719b0cd620d581aa6566524a3a69ac821abf"
+  },
+  "dronecan/dsdl_specs/com/xacti/20554.GimbalControlData.uavcan": {
+    "bytes": 976,
+    "sha256": "5bf46eb2418658607105cbd46a34676873007c0598daddfd120a990f12f17673"
+  },
+  "dronecan/dsdl_specs/cuav/equipment/power/20300.CBAT.uavcan": {
+    "bytes": 3008,
+    "sha256": "1b029e9db755d8726458005f57ecd3a7a16e139ae3da149ac87d63336ab8531c"
+  },
+  "dronecan/dsdl_specs/dronecan/protocol/16371.FlexDebug.uavcan": {
+    "bytes": 263,
+    "sha256": "ed55d01ca3fbbf711c7df187e06f47f7fd7845c8eae4984df62147fa9b97d376"
+  },
+  "dronecan/dsdl_specs/dronecan/protocol/342.Stats.uavcan": {
+    "bytes": 911,
+    "sha256": "e81af9ccf027a253464265452d341e0b081a454e5ed5aae5d1ba0e4f4da7ca22"
+  },
+  "dronecan/dsdl_specs/dronecan/protocol/343.CanStats.uavcan": {
+    "bytes": 621,
+    "sha256": "7aceedd1d99d7079258ddc05c6bc5e7d787a79fc7c9661951449b7655afaca72"
+  },
+  "dronecan/dsdl_specs/dronecan/protocol/344.GlobalTime.uavcan": {
+    "bytes": 177,
+    "sha256": "60f2ac255ad02319266ef745eb214fdbf67f684ec779038854b41ac10225986e"
+  },
+  "dronecan/dsdl_specs/dronecan/remoteid/20030.BasicID.uavcan": {
+    "bytes": 1371,
+    "sha256": "d47294ee306bf7d0a51052bb272220eeeee4179b2f6c721eb9af91df241d8579"
+  },
+  "dronecan/dsdl_specs/dronecan/remoteid/20031.Location.uavcan": {
+    "bytes": 4947,
+    "sha256": "a9e9e94d6e8ebe6626ace59c170bc2eca389c6603ef6e1af671d9570cc8b248e"
+  },
+  "dronecan/dsdl_specs/dronecan/remoteid/20032.SelfID.uavcan": {
+    "bytes": 258,
+    "sha256": "c4f7c31cc694f282eb0afc99d3132b4adac04df8c50b9dd3e6c3b9ade1411d4b"
+  },
+  "dronecan/dsdl_specs/dronecan/remoteid/20033.System.uavcan": {
+    "bytes": 2232,
+    "sha256": "c8334e130431e65f54b7da1fcde6749546c6d6362967e471bfb5788543bc8429"
+  },
+  "dronecan/dsdl_specs/dronecan/remoteid/20034.OperatorID.uavcan": {
+    "bytes": 267,
+    "sha256": "4695e71304d62ff5d075903edab366cdf77a8b27eeb85123a4129ef8a7c92dd2"
+  },
+  "dronecan/dsdl_specs/dronecan/remoteid/20035.ArmStatus.uavcan": {
+    "bytes": 212,
+    "sha256": "a25eb219111dede0ef64a31ed683b791527725f75e982d526a49666fc80dc6ce"
+  },
+  "dronecan/dsdl_specs/dronecan/remoteid/64.SecureCommand.uavcan": {
+    "bytes": 687,
+    "sha256": "05a36a982cc08a10ad96503295df097525f4e2e2d84040c82aec1acd55ea8381"
+  },
+  "dronecan/dsdl_specs/dronecan/sensors/hygrometer/1032.Hygrometer.uavcan": {
+    "bytes": 233,
+    "sha256": "c636371af5c6c3067a3535942000cf3726ce9838fd2491ba4b9ef374a33b32b5"
+  },
+  "dronecan/dsdl_specs/dronecan/sensors/magnetometer/1043.MagneticFieldStrengthHiRes.uavcan": {
+    "bytes": 124,
+    "sha256": "df7756dffa88dfc99070573a71957d948000d7bcbb782e0197b22b7093c165af"
+  },
+  "dronecan/dsdl_specs/dronecan/sensors/rc/1140.RCInput.uavcan": {
+    "bytes": 378,
+    "sha256": "9c1db6d67caa75764bfbb025a4f4ec17d1261926661a026c0b358d25c4b96bcd"
+  },
+  "dronecan/dsdl_specs/dronecan/sensors/rpm/1045.RPM.uavcan": {
+    "bytes": 140,
+    "sha256": "05e05cf56b19a46ea2f912a7eabf7eabb230f2364bdae7e8649db11bf0b3c960"
+  },
+  "dronecan/dsdl_specs/mppt/20009.Stream.uavcan": {
+    "bytes": 421,
+    "sha256": "d10ba4dd5387364bd9087bcb4502d3cf824cb61a51440a0573eeee0089c2641f"
+  },
+  "dronecan/dsdl_specs/mppt/240.OutputEnable.uavcan": {
+    "bytes": 529,
+    "sha256": "6f0c1c5425029004041c7a56073d2783382300fc107413f417f74573bc60a27b"
+  },
+  "dronecan/dsdl_specs/uavcan/CoarseOrientation.uavcan": {
+    "bytes": 647,
+    "sha256": "62e58506852c79f2ab32b4e8e18838632d1515b4861880efb83387092e2e9895"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/actuator/1010.ArrayCommand.uavcan": {
+    "bytes": 144,
+    "sha256": "d892ea97670d88c77440bc1a646e635122dd84ae307b9bb29bbaecf2550367d9"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/actuator/1011.Status.uavcan": {
+    "bytes": 484,
+    "sha256": "0dcec21049829214644ef428752839179b69bf6c51c74bdcb1afa694db421ddc"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/actuator/Command.uavcan": {
+    "bytes": 532,
+    "sha256": "2787f7627ee471ccf2121836e9452399339f221310dd8013c53ea791719734b1"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/ahrs/1000.Solution.uavcan": {
+    "bytes": 356,
+    "sha256": "63b5ef59cf18a87df54bd3ae5ef0bf29520c063fdb14ff8fc5c2604eacbc366f"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/ahrs/1001.MagneticFieldStrength.uavcan": {
+    "bytes": 274,
+    "sha256": "eb3b17aff1747e59a241cc26a8ea750818a272e0f4d966febe39faf38bc3ac08"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/ahrs/1002.MagneticFieldStrength2.uavcan": {
+    "bytes": 203,
+    "sha256": "bfe6876c0674d08fc7bdb1dc0f6b98ff24f43e8b7767b007da3491241528a320"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/ahrs/1003.RawIMU.uavcan": {
+    "bytes": 1697,
+    "sha256": "cec61856e70f8ca3f18e55a17d821294f9964a6803c22e185fb8069ced5c9f9a"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/air_data/1020.TrueAirspeed.uavcan": {
+    "bytes": 92,
+    "sha256": "5a5abdbfa878f45698041ce5df0ab2df3e62e765defa0cdb23cc2ea6e819d283"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/air_data/1021.IndicatedAirspeed.uavcan": {
+    "bytes": 108,
+    "sha256": "ba4336a79fce254b10fc0b61c16a6b1fe2ff4d49a374e5b33c073871c3363a78"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/air_data/1025.AngleOfAttack.uavcan": {
+    "bytes": 166,
+    "sha256": "9e2c6c68376aa787cac674c5458522b2e26f39ffb86bb9acb3b637d23effb8f7"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/air_data/1026.Sideslip.uavcan": {
+    "bytes": 119,
+    "sha256": "64f95ab12f12f6f6143ffde3218a35604b7736f4d5b0de1fbb66b83325de4d17"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/air_data/1027.RawAirData.uavcan": {
+    "bytes": 1410,
+    "sha256": "c494a4e22da8a711115dbdd8952fdd401d53ef4f8280940ab0c557dd564f1f49"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/air_data/1028.StaticPressure.uavcan": {
+    "bytes": 124,
+    "sha256": "6c9bd946843126fa99d1bfa4e47338fcc15224a74bdec72f40741f9e6b3fd98d"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/air_data/1029.StaticTemperature.uavcan": {
+    "bytes": 127,
+    "sha256": "98c656f93cfc1bc3fb8fc9c2ec852dad0a2cbded03370f55d73bc9577e4c4057"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/camera_gimbal/1040.AngularCommand.uavcan": {
+    "bytes": 543,
+    "sha256": "59fa5ddbba5227ca913af96dbb0d29850aedfc9037f7ca4c43160ff29a5176dc"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/camera_gimbal/1041.GEOPOICommand.uavcan": {
+    "bytes": 515,
+    "sha256": "b272c08458396258e78382885f803b6b3e5d477a9a45d10413bd31122872f925"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/camera_gimbal/1044.Status.uavcan": {
+    "bytes": 320,
+    "sha256": "9ab3d62c6b71e8e013b47e2c832a46a0cab3e3bb6931c1adc057219abed67693"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/camera_gimbal/Mode.uavcan": {
+    "bytes": 236,
+    "sha256": "8410ee17cbbca7eac47e4122bffb7979615b47baefa741da9e7ae2ee625842c8"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/device/1110.Temperature.uavcan": {
+    "bytes": 186,
+    "sha256": "5bcc37e1e2ddb4ee0bbe291201d0d7a737512dd79f6855117d6add5c5baeda9b"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/esc/1030.RawCommand.uavcan": {
+    "bytes": 612,
+    "sha256": "f70d08cc8d545b94deeb0a3a769c96a7f8d9590427050b9e6a47c290687c58f8"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/esc/1031.RPMCommand.uavcan": {
+    "bytes": 629,
+    "sha256": "3a72dd10fa75285c422ef91e7e07a02cfe96effc2ed641fc560f06a8cee75cf8"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/esc/1034.Status.uavcan": {
+    "bytes": 926,
+    "sha256": "31e34b605cdf43c64f08dff54471cb2f805d170fa77e167a3ca777a15892a226"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/esc/1036.StatusExtended.uavcan": {
+    "bytes": 981,
+    "sha256": "d583004942a6675a5653821febe7fd51bc978f1f4d17265db9ed0f543184c6ba"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/gnss/1060.Fix.uavcan": {
+    "bytes": 1525,
+    "sha256": "293cb85a7c2e8ff643b721ffb41c529f4880cc342639bd83de6702dbc782d9e7"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/gnss/1061.Auxiliary.uavcan": {
+    "bytes": 360,
+    "sha256": "a84833e597dd47ed0d3cf6123730839b4b3e66ab5334a20a5646a1eb7736eaea"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/gnss/1062.RTCMStream.uavcan": {
+    "bytes": 282,
+    "sha256": "29fc87e0dcc30e197baf4e03cccb9a640f1ec5a26b3e3d53ce1569c874c06ea0"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/gnss/1063.Fix2.uavcan": {
+    "bytes": 3354,
+    "sha256": "93a38f21babf9975c6617cdd8b9987f775c34c16dd7c44b6727422d199a29d87"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/gnss/ECEFPositionVelocity.uavcan": {
+    "bytes": 953,
+    "sha256": "d27fc7552ee5ada29cd0aaead589af0cce06f567bab7e6295d849b45ca9901db"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/hardpoint/1070.Command.uavcan": {
+    "bytes": 148,
+    "sha256": "d47d835c1e0fa6bf48d41928ba495abdb7c02b570853460a5dfdace80c54cf10"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/hardpoint/1071.Status.uavcan": {
+    "bytes": 229,
+    "sha256": "5c5be1cf87a3ffd51b9fa1ff372b6ec7b5cfcd01a9805f7ada6b86446a2ed649"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/ice/1129.FuelTankStatus.uavcan": {
+    "bytes": 1058,
+    "sha256": "413530792706bfbb645ae1ca26127f37909d025805e39bde6b726d3913c78d62"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/ice/reciprocating/1120.Status.uavcan": {
+    "bytes": 5446,
+    "sha256": "f51693697e6f0922d2d21141301d0c12e92bbe9fb6445f72e3526efac6cff738"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/ice/reciprocating/CylinderStatus.uavcan": {
+    "bytes": 793,
+    "sha256": "a23fb3b725143cbea8678f2b13cf519fbc60f3efa25f91af38019b1bfcd6d81b"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/indication/1080.BeepCommand.uavcan": {
+    "bytes": 112,
+    "sha256": "e41b3ab011c405d99bcb2ebe8e286d21551a36043bbb70f8c06f8f23a5798433"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/indication/1081.LightsCommand.uavcan": {
+    "bytes": 65,
+    "sha256": "4aa5e07c289987d04fcef11d94e9f1a701ec1108db09a5494cec47766a533a6e"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/indication/RGB565.uavcan": {
+    "bytes": 221,
+    "sha256": "38a6a786cfed056b5fda54485b99b68751a66646ef548a657e894729a0cc7589"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/indication/SingleLightCommand.uavcan": {
+    "bytes": 1775,
+    "sha256": "071e71c6d17ce10efa57c225ddf2994921f43e5c578ba67a0b91d009035f7fbb"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/power/1090.PrimaryPowerSupplyStatus.uavcan": {
+    "bytes": 667,
+    "sha256": "1b5d769b228002c0f4c631d67aca6862dcb0dcfe91982a4c636a65b0bf6c6f6e"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/power/1091.CircuitStatus.uavcan": {
+    "bytes": 246,
+    "sha256": "53389334ef06109da1f356220a727b80ad39ed5494c09296295a3e0535a867d3"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/power/1092.BatteryInfo.uavcan": {
+    "bytes": 3219,
+    "sha256": "206436c7547fa48cdbbe1ace11b9e8a8f9b35c2af7b6624b4e9529de3a086ef0"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/range_sensor/1050.Measurement.uavcan": {
+    "bytes": 710,
+    "sha256": "6b9529df6b9b862843880d82e108c4e85469c1514ea1bb8057be8be4e4cadebd"
+  },
+  "dronecan/dsdl_specs/uavcan/equipment/safety/1100.ArmingStatus.uavcan": {
+    "bytes": 214,
+    "sha256": "a72ff951dc6b0f3f3c06e299163a9ed5643bc0a703035e8a078a83c2396eeeef"
+  },
+  "dronecan/dsdl_specs/uavcan/navigation/2000.GlobalNavigationSolution.uavcan": {
+    "bytes": 2202,
+    "sha256": "cd7a597843b44b880db964551defd3e983a2cb91485fa9919a8a36292d84cd5f"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/1.GetNodeInfo.uavcan": {
+    "bytes": 673,
+    "sha256": "5609145e4d43e6a0b704025f5525f81da0cecd5ccf64cce2a416ebb7ef06a79c"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/2.GetDataTypeInfo.uavcan": {
+    "bytes": 1087,
+    "sha256": "877f1e3b66e3ce635ec4ecfe9c1065e835d3c0feea634c6222fc5d026c5cb579"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/341.NodeStatus.uavcan": {
+    "bytes": 1986,
+    "sha256": "5aba45e0315843e2cdb36f720725c235efc7a02d10769140ca7a0e745f032d70"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/4.GetTransportStats.uavcan": {
+    "bytes": 397,
+    "sha256": "5e066fdf1f7bff8e48e9aa11d819e78857211f103e6de337b70df2d4b3d1d2e8"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/4.GlobalTimeSync.uavcan": {
+    "bytes": 778,
+    "sha256": "4144187bdbb7a30d220225cad4f5c886a5d5787734f4e9a48207cc1826dfa5df"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/5.Panic.uavcan": {
+    "bytes": 568,
+    "sha256": "2621ff1e80b40871fac50beba76310693386bfc5aa527f508fd59915f719e85c"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/5.RestartNode.uavcan": {
+    "bytes": 255,
+    "sha256": "f847efa69763a6e637f812b7ace15a386db0c5f0c720c9b214ad0135afb1c2e1"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/6.AccessCommandShell.uavcan": {
+    "bytes": 2933,
+    "sha256": "bdba5e0408fc07bdd7fcbb6c4eae221072695c78697f83755cdf9e2aef87b562"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/CANIfaceStats.uavcan": {
+    "bytes": 214,
+    "sha256": "efc4d1401d184cb51a3e57572a19952625238ec5406fef692b5b7d403e70ac80"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/DataTypeKind.uavcan": {
+    "bytes": 92,
+    "sha256": "c94faa73032e54d907f1a90f3a2acd383867c9559764c9bccb0b9bbe623dee5e"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/debug/16370.KeyValue.uavcan": {
+    "bytes": 368,
+    "sha256": "b9315e02474890799a9629ca723ba82ff3f9225e8fbeca92ce73d5fe6c691410"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/debug/16383.LogMessage.uavcan": {
+    "bytes": 109,
+    "sha256": "4107cf72c8f9e2f214f690787fe4ec0a07d90a2c61ede3adf1160322fa61b85f"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/debug/LogLevel.uavcan": {
+    "bytes": 116,
+    "sha256": "fb5aabe1b4f88081d80e1a6990932f2a59e8f79b56cc20a1e07b56ca4068d3bc"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/dynamic_node_id/1.Allocation.uavcan": {
+    "bytes": 6997,
+    "sha256": "7d14215db4da5016858630ead52c68115db178b1f462b09262bed33e0185c036"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/dynamic_node_id/server/30.AppendEntries.uavcan": {
+    "bytes": 1383,
+    "sha256": "645e3eeb1d5efb5e5005a3678b6437a12c1326fb5960fe7ce58d2c9a4dd2dc5e"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/dynamic_node_id/server/31.RequestVote.uavcan": {
+    "bytes": 335,
+    "sha256": "cf587d3f603892f05c1dd975359553ac57e73824e382d6ed605b19effed6b8a4"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/dynamic_node_id/server/390.Discovery.uavcan": {
+    "bytes": 1054,
+    "sha256": "6b13c59a32717a4cfde7c75d598e1f848b048a29c14a1f3952e83f7307e36843"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/dynamic_node_id/server/Entry.uavcan": {
+    "bytes": 376,
+    "sha256": "66f167f1656a0ccea059626128a5dd0d125c54d594eb8e05338e6e76afa94b8f"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/enumeration/15.Begin.uavcan": {
+    "bytes": 1303,
+    "sha256": "c5607b370b6f5efff64142897f13716b5fe09e5f17cf9c4e4bf0e76efb7c39ba"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/enumeration/380.Indication.uavcan": {
+    "bytes": 486,
+    "sha256": "bf977a984e294e1d052de581f1d7b41bdfd121c54ad61e9a3d9b61b62107efae"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/file/40.BeginFirmwareUpdate.uavcan": {
+    "bytes": 1242,
+    "sha256": "e54541f11949e6ae486ed272ceb3049a23f10e1657d5c4c054a52773bb033f5e"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/file/45.GetInfo.uavcan": {
+    "bytes": 207,
+    "sha256": "03a0263c3af7ae55347363e0ed77d6529eaa8b71dab72da59cfce529e95222d1"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/file/46.GetDirectoryEntryInfo.uavcan": {
+    "bytes": 696,
+    "sha256": "c2a7deb1deffa6dfe499bc5bda162890b75139989d8bd6342ffa98a8c131c462"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/file/47.Delete.uavcan": {
+    "bytes": 146,
+    "sha256": "6956973af79f4334a9f0e1de12b9d145ccac642e1e3b33f838ddbc248f8c5708"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/file/48.Read.uavcan": {
+    "bytes": 706,
+    "sha256": "ff4be0886aeabfc737af94c92c4833fe28c9ce8bc0deb2122c9a4a9ee25dfa39"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/file/49.Write.uavcan": {
+    "bytes": 953,
+    "sha256": "ec261c76eb4d9e81796da68e4f880c454032090e7db11abea2a2455ef386501d"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/file/EntryType.uavcan": {
+    "bytes": 413,
+    "sha256": "153484251853a56cf686da55442bd1ea7e1600a37ee277f8df483930b8a74d57"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/file/Error.uavcan": {
+    "bytes": 477,
+    "sha256": "a3777fc3a0b79fa9b25ea7065b36e5b4b5fc9734e06dd25056b2d919a61f606a"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/file/Path.uavcan": {
+    "bytes": 138,
+    "sha256": "5c022f66768deb93b42415ca1542ff203c6898fed22bb91963896b8836097a76"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/HardwareVersion.uavcan": {
+    "bytes": 488,
+    "sha256": "11186da8f71a1bac866c3b39f333982d5b14e38ec2bd79485425923263af832f"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/param/10.ExecuteOpcode.uavcan": {
+    "bytes": 1327,
+    "sha256": "5de3a06db74ef1c638ddfd22a6f11c1308d88519beb96e41ed1f0fc74a81e7ad"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/param/11.GetSet.uavcan": {
+    "bytes": 1663,
+    "sha256": "eddeed06634ee90a087cc4a5cc215eb0078cbf6ef019939e79ba68514b792d2c"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/param/Empty.uavcan": {
+    "bytes": 27,
+    "sha256": "96050e5c520ac43515abed88c8e4cca28f2b3e6e98c0224569e6c3a5879b8320"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/param/NumericValue.uavcan": {
+    "bytes": 412,
+    "sha256": "b24510ed616d2dd14621e28b8e489e105b0224fc4fce6bb6be986df03d1fb03b"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/param/Value.uavcan": {
+    "bytes": 756,
+    "sha256": "3f69465029592950fe07a59e6657006420a1345f36fb5270992e230d3a514492"
+  },
+  "dronecan/dsdl_specs/uavcan/protocol/SoftwareVersion.uavcan": {
+    "bytes": 1549,
+    "sha256": "3a230b2b1bc2055e652154e158e0880fd1a834401c84598472c369500a825678"
+  },
+  "dronecan/dsdl_specs/uavcan/Timestamp.uavcan": {
+    "bytes": 212,
+    "sha256": "31ff8648230833d0074667bcff4ddfdc53f38b310bbb646b18418703a5715131"
+  },
+  "dronecan/dsdl_specs/uavcan/tunnel/2010.Broadcast.uavcan": {
+    "bytes": 445,
+    "sha256": "c4711c4f6b3f4c1032058b3899ce51bcce5401cf8e0e764a7049774c18c22635"
+  },
+  "dronecan/dsdl_specs/uavcan/tunnel/2011.SerialConfig.uavcan": {
+    "bytes": 186,
+    "sha256": "19994291c91e61b96f7fe2a53e52ca4e40d1408ba3fc94146bd334a081e0e1ec"
+  },
+  "dronecan/dsdl_specs/uavcan/tunnel/3001.Targetted.uavcan": {
+    "bytes": 666,
+    "sha256": "6113bc82044e1e5733408eca96a0315612b01d153e1915aeb67bd39dc006ea02"
+  },
+  "dronecan/dsdl_specs/uavcan/tunnel/63.Call.uavcan": {
+    "bytes": 572,
+    "sha256": "c6020a9be7b52eb8461dccf6e0d2de7255ed8eebfb147207905f500ac0931edb"
+  },
+  "dronecan/dsdl_specs/uavcan/tunnel/Protocol.uavcan": {
+    "bytes": 369,
+    "sha256": "bf958a2141cb240e78ecadeb68244c4831533032ffd4fa77baf31b4d8fb754c8"
+  },
+  "dronecan/introspect.py": {
+    "bytes": 14857,
+    "sha256": "467950afe627d5590d36d6eb5349617d6407631f3a80e6ac8546a69555f53563"
+  },
+  "dronecan/node.py": {
+    "bytes": 22857,
+    "sha256": "83cb2efa6a407c7585893f34b7a20ac11c42e057a5c44e5f0adec9b28151bb7d"
+  },
+  "dronecan/py.typed": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "dronecan/transport.py": {
+    "bytes": 34246,
+    "sha256": "1e844a244197697025fd48241338321e41fe8e191d6af651b869b8d795faac61"
+  },
+  "dronecan/transport.pyi": {
+    "bytes": 6826,
+    "sha256": "2bbb32659f02b5641f76ce48458122da84a964a49a6c8e13d7beebc28fb5e092"
+  },
+  "dronecan/utility.py": {
+    "bytes": 3803,
+    "sha256": "79b80a0aaff5595f343c53cda82509ac2fc422db843f22cf05429107fbc097d7"
+  },
+  "dronecan/version.py": {
+    "bytes": 318,
+    "sha256": "c7c63e571b845a62a39c6c1d39a971ad2e186647da96e1ffe66a2f33b63562e3"
+  }
+}

@@ -12,7 +12,7 @@ authors = [{name='Pavel Kirienko', email='uavcan@googlegroups.com'},
            {name='Ben Dyer', email='ben_dyer@mac.com'}]
 maintainers = [{name='Andrew Tridgell', email='andrew@tridgell.net'},
                {name='Siddharth Purohit', email='sidbpurohit@gmail.com'}]
-readme = {file = "README.txt", content-type = "text/markdown"}
+readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.7"
 classifiers = [
     'Development Status :: 6 - Mature',

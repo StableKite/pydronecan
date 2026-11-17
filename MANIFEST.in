@@ -1,1 +1,3 @@
-recursive-include ../DSDL/ *.uavcan
+include dronecan/py.typed
+recursive-include dronecan *.pyi
+recursive-include dronecan/dsdl_specs *.uavcan
